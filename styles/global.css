@@ -1,0 +1,62 @@
+body {
+    font-family: cursive;
+}
+
+nav {
+    background-color: #53bad1;
+    padding: 8px 15px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-left: 15px;
+}
+
+nav ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:not(:nth-child(1), :last-child):after {
+    content: "|";
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    right: -14px;
+}
+
+li>a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li>a:hover {
+    text-decoration: underline;
+}
+
+nav svg {
+    width: 42px;
+    color: white;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.home-link {
+    margin-left: 14px;
+}
+
+.active {
+    font-weight: bold;
+    color: rgb(88 32 199);
+}
